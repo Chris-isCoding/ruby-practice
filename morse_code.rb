@@ -38,7 +38,7 @@ class MorseCode
     puts "\n\n"
   end
 
-  def magic2
+  def magic_reverse
     line
     puts "Here Magic happens"
     line
@@ -51,7 +51,7 @@ class MorseCode
     puts 'You entered: '
     line
     puts
-    morse_input.each { |morse| print "#{morse_code.key(morse)} " }
+    morse_input.each { |morse| print "#{morse_code.key(morse)}" }
     puts "\n\n"
   end
 
@@ -70,7 +70,7 @@ class MorseCode
         morse.magic
         elsif
         answer == 'Q'
-        morse.magic2
+        morse.magic_reverse
         else
         answer == "E"
         puts 'Thank you for using my awesome program, the fee for each letter entered is $1.00'
