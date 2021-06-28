@@ -1,8 +1,10 @@
 class Computer
   @@users = {}
+
   def Computer.get_users
     @@users
   end
+
   def initialize(username, password)
     @username = username
     @password = password
